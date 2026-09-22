@@ -1,0 +1,17 @@
+services:
+  angular-app:
+    build: .
+    container_name: angular_dev
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - node_modules_data:/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - NG_CLI_ANALYTICS=false
+    stdin_open: true
+    tty: true
+
+volumes:
+  node_modules_data:
