@@ -44,7 +44,7 @@ Para iniciar el servidor de desarrollo local mediante Docker Compose:
 2. **Verificar los logs:**
    ````bash
    docker logs -f angular_dev
-3. Acceder en el navegador a: [localhost](http://localhost:4200)
+3. Acceder en el navegador a: **http://localhost:4200**
 
 --- 
 
